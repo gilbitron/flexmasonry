@@ -78,24 +78,33 @@ The `FlexMasonry` variable has several methods:
 Initialises the FlexMasonry library and sets up the `targets` as masonry grids.
 
 * `targets` can be a string, an array of elements or a `Node​List`.
-* `options` see above.
+* `options` [see above](#options).
 
 **`refresh(target, options = {})`**
 
 Refreshes the `target` grid layout.
 
 * `targets` can be a string, an array of elements or a `Node​List`.
-* `options` see above.
+* `options` [see above](#options).
 
 **`refreshAll(options = {})`**
 
 Refreshes the grid layouts of all `targets` passed to `init()`.
 
-* `options` see above.
+* `options` [see above](#options).
 
 **`destroyAll()`**
 
 Removes the event listeners for all `targets` passed to `init()`.
+
+## Development
+
+To watch/build the library:
+
+```
+yarn watch
+yarn build
+```
 
 ## Credits
 
