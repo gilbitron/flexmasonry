@@ -99,7 +99,7 @@ Removes the event listeners for all `targets` passed to `init()`.
 
 ## Development
 
-To watch/build the library:
+Run `yarn` to install the dependencies and use `demo/index.html` to test things. To watch/build the library:
 
 ```
 yarn watch
