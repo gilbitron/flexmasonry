@@ -26,7 +26,7 @@ const defaultOptions = {
     debounce: 20,
 };
 
-let _resizeTaskId = null;
+let _resizeId = null;
 let _options = {};
 let _targets = [];
 
@@ -72,14 +72,13 @@ function onLoad() {
 }
 
 function onResize() {
-    if (_resizeTaskId !== null) {
-        clearTimeout(_resizeTaskId);
+    if (_resizeId) {
+        window.cancelAnimationFrame(_resizeId);
     }
 
-    _resizeTaskId = setTimeout(function() {
-        _resizeTaskId = null;
+    _resizeId = window.requestAnimationFrame(function() {
         refreshAll();
-    }, _options.debounce);
+    });
 }
 
 function addEventListeners() {
