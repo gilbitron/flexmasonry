@@ -1,6 +1,6 @@
 /*!
  * FlexMasonry
- * Version: 0.2.1
+ * Version: 0.2.2
  * Author: Gilbert Pellegrom <gilbert@pellegrom.me>
  * License: MIT
  */
@@ -67,4 +67,45 @@
     width: 0 !important;
     margin: 0;
 }
+.flexmasonry-cols-2 .flexmasonry-break:nth-child(2n+1) { order: 1; }
+.flexmasonry-cols-2 .flexmasonry-break:nth-child(2n)   { order: 2; }
+
+.flexmasonry-cols-3 .flexmasonry-break:nth-child(3n+1) { order: 1; }
+.flexmasonry-cols-3 .flexmasonry-break:nth-child(3n+2) { order: 2; }
+.flexmasonry-cols-3 .flexmasonry-break:nth-child(3n)   { order: 3; }
+
+.flexmasonry-cols-4 .flexmasonry-break:nth-child(4n+1) { order: 1; }
+.flexmasonry-cols-4 .flexmasonry-break:nth-child(4n+2) { order: 2; }
+.flexmasonry-cols-4 .flexmasonry-break:nth-child(4n+3) { order: 3; }
+.flexmasonry-cols-4 .flexmasonry-break:nth-child(4n)   { order: 4; }
+
+.flexmasonry-cols-5 .flexmasonry-break:nth-child(5n+1) { order: 1; }
+.flexmasonry-cols-5 .flexmasonry-break:nth-child(5n+2) { order: 2; }
+.flexmasonry-cols-5 .flexmasonry-break:nth-child(5n+3) { order: 3; }
+.flexmasonry-cols-5 .flexmasonry-break:nth-child(5n+4) { order: 4; }
+.flexmasonry-cols-5 .flexmasonry-break:nth-child(5n)   { order: 5; }
+
+.flexmasonry-cols-6 .flexmasonry-break:nth-child(6n+1) { order: 1; }
+.flexmasonry-cols-6 .flexmasonry-break:nth-child(6n+2) { order: 2; }
+.flexmasonry-cols-6 .flexmasonry-break:nth-child(6n+3) { order: 3; }
+.flexmasonry-cols-6 .flexmasonry-break:nth-child(6n+4) { order: 4; }
+.flexmasonry-cols-6 .flexmasonry-break:nth-child(6n+5) { order: 5; }
+.flexmasonry-cols-6 .flexmasonry-break:nth-child(6n)   { order: 6; }
+
+.flexmasonry-cols-7 .flexmasonry-break:nth-child(7n+1) { order: 1; }
+.flexmasonry-cols-7 .flexmasonry-break:nth-child(7n+2) { order: 2; }
+.flexmasonry-cols-7 .flexmasonry-break:nth-child(7n+3) { order: 3; }
+.flexmasonry-cols-7 .flexmasonry-break:nth-child(7n+4) { order: 4; }
+.flexmasonry-cols-7 .flexmasonry-break:nth-child(7n+5) { order: 5; }
+.flexmasonry-cols-7 .flexmasonry-break:nth-child(7n+6) { order: 6; }
+.flexmasonry-cols-7 .flexmasonry-break:nth-child(7n)   { order: 7; }
+
+.flexmasonry-cols-8 .flexmasonry-break:nth-child(8n+1) { order: 1; }
+.flexmasonry-cols-8 .flexmasonry-break:nth-child(8n+2) { order: 2; }
+.flexmasonry-cols-8 .flexmasonry-break:nth-child(8n+3) { order: 3; }
+.flexmasonry-cols-8 .flexmasonry-break:nth-child(8n+4) { order: 4; }
+.flexmasonry-cols-8 .flexmasonry-break:nth-child(8n+5) { order: 5; }
+.flexmasonry-cols-8 .flexmasonry-break:nth-child(8n+6) { order: 6; }
+.flexmasonry-cols-8 .flexmasonry-break:nth-child(8n+7) { order: 7; }
+.flexmasonry-cols-8 .flexmasonry-break:nth-child(8n)   { order: 8; }
 
