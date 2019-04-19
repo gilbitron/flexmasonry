@@ -4,13 +4,6 @@
     align-content: space-between;
 }
 
-.flexmasonry-break {
-    content: "";
-    flex-basis: 100%;
-    width: 0;
-    margin: 0;
-}
-
 .flexmasonry-item { width: 100%; }
 .flexmasonry-cols-2 .flexmasonry-item { width: 50%; }
 .flexmasonry-cols-3 .flexmasonry-item { width: 33.333%; }
@@ -61,3 +54,10 @@
 .flexmasonry-cols-8 .flexmasonry-item:nth-child(8n+6) { order: 6; }
 .flexmasonry-cols-8 .flexmasonry-item:nth-child(8n+7) { order: 7; }
 .flexmasonry-cols-8 .flexmasonry-item:nth-child(8n)   { order: 8; }
+
+.flexmasonry-break {
+    content: "";
+    flex-basis: 100%;
+    width: 0 !important;
+    margin: 0;
+}

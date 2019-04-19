@@ -122,6 +122,7 @@ function addBreakElements(target) {
 
     for (let i = 0; i < (getCurrentCols() - 1); i++) {
         const breakDiv = document.createElement('div');
+        breakDiv.classList.add('flexmasonry-item');
         breakDiv.classList.add('flexmasonry-break');
         target.appendChild(breakDiv);
     }
