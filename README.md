@@ -24,7 +24,7 @@ yarn add flexmasonry
 
 Then, include the `flexmasonry.js` and `flexmasonry.css` files from the `dist` folder in your HTML. Or you can use the files directly from a CDN:
 
-```
+```html
 <link rel="stylesheet" href="https://unpkg.com/flexmasonry/dist/flexmasonry.css">
 <script src="https://unpkg.com/flexmasonry/dist/flexmasonry.js"></script>
 ```
