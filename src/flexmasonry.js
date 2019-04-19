@@ -120,9 +120,10 @@ function addBreakElements(target) {
         return;
     }
 
-    for (let i = 0; i < (getCurrentCols() - 1); i++) {
+    for (let i = 1; i < getCurrentCols(); i++) {
         const breakDiv = document.createElement('div');
         breakDiv.classList.add('flexmasonry-break');
+        breakDiv.classList.add('flexmasonry-break-' + i);
         target.appendChild(breakDiv);
     }
 }
