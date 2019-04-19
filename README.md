@@ -4,6 +4,13 @@
 
 FlexMasonry is a lightweight, zero-dependency, masonry (cascading grid layout) library powered by CSS flexbox. The library itself is inspired by [this article by Tobias Ahlin](https://tobiasahlin.com/blog/masonry-with-css/) on using `flex`, `:nth-child()`, and `order` to create a pure CSS masonry layout (as opposed to the hugely popular [Masonry library by David DeSandro](https://masonry.desandro.com/) that is powered by Javascript). I've taken this concept and sprinkled in some Javascript to tie it all together and make it easy to use.
 
+## Features
+
+* **Lightweight** - Just 6KB of JS and CSS
+* **Fast** - Uses CSS flexbox for layout
+* **Responsive** - Show different number of columns at different breakpoints
+* **Simple** - Just 3 options
+
 ## Install
 
 * Download the [latest release](https://github.com/gilbitron/flexmasonry/releases).
@@ -114,6 +121,12 @@ Run `yarn` to install the dependencies and use `demo/index.html` to test things.
 yarn watch
 yarn build
 ```
+
+## FAQ
+
+> Why not just use pure CSS?
+
+A good question! You _can_ use pure CSS to achieve the same outcome. However, there are several aspects of this setup that require a bit of "dynamic" updating to make it flexible and easy to use (hence the use of Javascript). The main one being that the masonry container requires a fixed height (which FlexMasonry calculates on the fly). Also the masonry container needs a certain number of "break" elements to work properly depending on the number of columns. To enable this, and to support having a different number of columns at different responsive breakpoints, we need Javascript.
 
 ## Credits
 
