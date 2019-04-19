@@ -20,10 +20,6 @@ const defaultOptions = {
      * no matter the width of the screen.
      */
     numCols: 4,
-    /*
-     * Used to throttle DOM updates when resizing the window.
-     */
-    debounce: 20,
 };
 
 let _resizeId = null;

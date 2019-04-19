@@ -64,10 +64,6 @@ The second, optional, parameter of the `init` method is an object containing opt
      * no matter the width of the screen.
      */
     numCols: 4,
-    /*
-     * Used to throttle DOM updates when resizing the window.
-     */
-    debounce: 20,
 }
 ```
 
