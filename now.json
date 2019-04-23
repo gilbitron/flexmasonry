@@ -2,8 +2,12 @@
   "version": 2,
   "name": "flexmasonry",
   "builds": [
-      { "src": "site/style.css", "dest": "/style.css" },
-      { "src": "site/index.html", "dest": "/index.html" }
+      { "src": "site/style.css", "use": "@now/static" },
+      { "src": "site/index.html", "use": "@now/static" }
+  ],
+  "routes": [
+    { "src": "site/style.css", "dest": "/style.css" },
+    { "src": "site/index.html", "dest": "/index.html" }
   ],
   "alias": "flexmasonry"
 }
