@@ -2,7 +2,7 @@
   "version": 2,
   "name": "flexmasonry",
   "builds": [
-      { "src": "site/style.css", "use": "@now/static" }
+      { "src": "site/style.css", "use": "@now/static" },
       { "src": "site/index.html", "use": "@now/static" }
   ],
   "alias": "flexmasonry"
