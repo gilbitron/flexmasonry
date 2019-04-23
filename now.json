@@ -6,8 +6,8 @@
       { "src": "site/index.html", "use": "@now/static" }
   ],
   "routes": [
-    { "src": "site/style.css", "dest": "/style.css" },
-    { "src": "site/index.html", "dest": "/index.html" }
+    { "src": "/style.css", "dest": "/site/style.css" },
+    { "src": "/", "dest": "/site/index.html" }
   ],
   "alias": "flexmasonry"
 }
