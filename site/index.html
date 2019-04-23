@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FlexMasonry - A lightweight masonry (cascading grid layout) library powered by flexbox</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jaldi:400,700|Roboto:400,400i,700">
+    <link rel="stylesheet" href="https://unpkg.com/flexmasonry@0.2.3/dist/flexmasonry.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="inner">
+            <h1><span>Flex</span>Masonry</h1>
+            <p>A lightweight masonry (cascading grid layout) library powered by flexbox.</p>
+        </div>
+    </header>
+
+    <section class="content">
+        <div class="inner">
+            <div id="demo" class="section demo-section">
+                <h2 class="section-title">Demo</h2>
+                <button class="btn btn-secondary" id="randomize">Randomize Layout</button>
+
+                <div class="demo-wrapper">
+                    <div id="demo-grid">
+                        <div><div class="demo-item"><div class="demo-item-inner"></div></div></div>
+                        <div><div class="demo-item"><div class="demo-item-inner"></div></div></div>
+                        <div><div class="demo-item"><div class="demo-item-inner"></div></div></div>
+                        <div><div class="demo-item"><div class="demo-item-inner"></div></div></div>
+                        <div><div class="demo-item"><div class="demo-item-inner"></div></div></div>
+                        <div><div class="demo-item"><div class="demo-item-inner"></div></div></div>
+                        <div><div class="demo-item"><div class="demo-item-inner"></div></div></div>
+                        <div><div class="demo-item"><div class="demo-item-inner"></div></div></div>
+                        <div><div class="demo-item"><div class="demo-item-inner"></div></div></div>
+                        <div><div class="demo-item"><div class="demo-item-inner"></div></div></div>
+                        <div><div class="demo-item"><div class="demo-item-inner"></div></div></div>
+                        <div><div class="demo-item"><div class="demo-item-inner"></div></div></div>
+                        <div><div class="demo-item"><div class="demo-item-inner"></div></div></div>
+                        <div><div class="demo-item"><div class="demo-item-inner"></div></div></div>
+                        <div><div class="demo-item"><div class="demo-item-inner"></div></div></div>
+                        <div><div class="demo-item"><div class="demo-item-inner"></div></div></div>
+                        <div><div class="demo-item"><div class="demo-item-inner"></div></div></div>
+                        <div><div class="demo-item"><div class="demo-item-inner"></div></div></div>
+                        <div><div class="demo-item"><div class="demo-item-inner"></div></div></div>
+                        <div><div class="demo-item"><div class="demo-item-inner"></div></div></div>
+                        <div><div class="demo-item"><div class="demo-item-inner"></div></div></div>
+                        <div><div class="demo-item"><div class="demo-item-inner"></div></div></div>
+                        <div><div class="demo-item"><div class="demo-item-inner"></div></div></div>
+                        <div><div class="demo-item"><div class="demo-item-inner"></div></div></div>
+                        <div><div class="demo-item"><div class="demo-item-inner"></div></div></div>
+                        <div><div class="demo-item"><div class="demo-item-inner"></div></div></div>
+                        <div><div class="demo-item"><div class="demo-item-inner"></div></div></div>
+                        <div><div class="demo-item"><div class="demo-item-inner"></div></div></div>
+                        <div><div class="demo-item"><div class="demo-item-inner"></div></div></div>
+                        <div><div class="demo-item"><div class="demo-item-inner"></div></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="features" class="section features-section">
+                <h2 class="section-title">Features</h2>
+                <div class="features">
+                    <div class="feature">
+                        <h3>Lightweight</h3>
+                        <p>FlexMasonry weighs just 6KB of JS and CSS combined.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Fast</h3>
+                        <p>Uses CSS flexbox for ultimate speed and performance.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Responsive</h3>
+                        <p>Show different number of columns at different breakpoints.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="quick-start" class="section quick-start-section">
+                <h2 class="section-title">Quick Start</h2>
+                <p>1. Include the JS &amp; CSS files on the page:</p>
+                <pre><code>&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;https://unpkg.com/flexmasonry/dist/flexmasonry.css&#x22;&#x3E;
+&#x3C;script src=&#x22;https://unpkg.com/flexmasonry/dist/flexmasonry.js&#x22;&#x3E;&#x3C;/script&#x3E;</code></pre>
+                <p>2. Then, set up your HTML:</p>
+                <pre><code>&#x3C;div class=&#x22;grid&#x22;&#x3E;
+    &#x3C;div&#x3E;&#x3C;img src=&#x22;https://source.unsplash.com/t3DHojIo-08&#x22; alt=&#x22;&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div&#x3E;&#x3C;img src=&#x22;https://source.unsplash.com/Imc-IoZDMXc&#x22; alt=&#x22;&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div&#x3E;&#x3C;img src=&#x22;https://source.unsplash.com/SOZWHqeXcPQ&#x22; alt=&#x22;&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div&#x3E;&#x3C;img src=&#x22;https://source.unsplash.com/bkdzvgBB7rQ&#x22; alt=&#x22;&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div&#x3E;&#x3C;img src=&#x22;https://source.unsplash.com/Aruugw_rJCM&#x22; alt=&#x22;&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                <p>3. Finally, hook up the script:</p>
+                <pre><code>FlexMasonry.init('.grid');</code></pre>
+                <p style="text-align: center; margin-top: 40px;">
+                    <a href="https://github.com/gilbitron/flexmasonry#install" class="btn btn-lg">Read Full Instructions</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="inner">
+            <p>FlexMasonry was created by <a href="https://gilbitron.me">Gilbert Pellegrom</a> from <a href="https://dev7studios.co">Dev7studios</a>. Released under the MIT license.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/flexmasonry@0.2.3/dist/flexmasonry.js"></script>
+    <script>
+        function demoLayout() {
+            const demoItems = document.querySelectorAll('.demo-item-inner');
+
+            let timer = 100;
+            demoItems.forEach(function(item) {
+                const min = 80;
+                const max = 250;
+                const height = Math.floor(Math.random()*(max-min+1)+min);
+                item.style.height = height + 'px';
+
+                item.classList.remove('appear');
+                setTimeout(function() {
+                    item.classList.add('appear');
+                }, timer);
+
+                timer += 25;
+            });
+        }
+
+        const fm = FlexMasonry.init('#demo-grid', {
+            breakpointCols: {
+                'min-width: 960px': 5,
+                'min-width: 768px': 4,
+                'min-width: 576px': 3,
+                'min-width: 450px': 2,
+            }
+        });
+
+        demoLayout();
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('randomize').addEventListener('click', function() {
+                demoLayout();
+                fm.refreshAll();
+            });
+        });
+    </script>
+</body>
+</html>
