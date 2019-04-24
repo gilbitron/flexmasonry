@@ -13,6 +13,8 @@ FlexMasonry is a lightweight, zero-dependency, masonry (cascading grid layout) l
 * **Responsive** - Show different number of columns at different breakpoints
 * **Simple** - Just 3 options
 
+[See a demo](https://flexmasonry.now.sh/)
+
 ## Install
 
 * Download the [latest release](https://github.com/gilbitron/flexmasonry/releases).
