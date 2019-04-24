@@ -1,5 +1,7 @@
 [![npm](https://img.shields.io/npm/v/flexmasonry.svg)](https://www.npmjs.com/package/flexmasonry)
 
+<img width="1181" alt="FlexMasonry" src="https://user-images.githubusercontent.com/203882/56666575-138a2100-66a4-11e9-8841-e26060140c72.png">
+
 # FlexMasonry
 
 FlexMasonry is a lightweight, zero-dependency, masonry (cascading grid layout) library powered by CSS flexbox. The library itself is inspired by [this article by Tobias Ahlin](https://tobiasahlin.com/blog/masonry-with-css/) on using `flex`, `:nth-child()`, and `order` to create a pure CSS masonry layout (as opposed to the hugely popular [Masonry library by David DeSandro](https://masonry.desandro.com/) that is powered by Javascript). I've taken this concept and sprinkled in some Javascript to tie it all together and make it easy to use.
