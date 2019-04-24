@@ -53,7 +53,7 @@ Then hook up the script, passing in the selector target:
 FlexMasonry.init('.grid');
 ```
 
-FlexMasonry will then convert all `.grid` elements to masonry grids will multiple columns.
+FlexMasonry will then convert all `.grid` elements to masonry grids with multiple columns.
 
 ## Options
 
