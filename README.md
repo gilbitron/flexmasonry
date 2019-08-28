@@ -109,7 +109,7 @@ Initialises the FlexMasonry library and sets up the `targets` as masonry grids.
 
 Refreshes the `target` grid layout.
 
-* `targets` can be a string, an array of elements or a `Node​List`.
+* `target` must be an `Element`.
 * `options` [see above](#options).
 
 **`refreshAll(options = {})`**
