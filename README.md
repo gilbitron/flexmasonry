@@ -137,6 +137,14 @@ yarn build
 
 A good question! You _can_ use pure CSS to achieve the same outcome. However, there are several aspects of this setup that require a bit of "dynamic" updating to make it flexible and easy to use (hence the use of Javascript). The main one being that the masonry container requires a fixed height (which FlexMasonry calculates on the fly). Also the masonry container needs a certain number of "break" elements to work properly depending on the number of columns. To enable this, and to support having a different number of columns at different responsive breakpoints, we need Javascript.
 
+## Show your Support
+
+To show your support for my work on this project:
+
+* [Star this repository](https://github.com/gilbitron/flexmasonry/stargazers)
+* [Tell others about this project](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fgilbitron%2Fflexmasonry)
+* [Sponsor me on GitHub](https://github.com/users/gilbitron/sponsorship)
+
 ## Credits
 
 FlexMasonry was created by [Gilbert Pellegrom](https://gilbitron.me) from [Dev7studios](https://dev7studios.co). Released under the MIT license.
