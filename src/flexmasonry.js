@@ -58,21 +58,6 @@ function setUp(target) {
         item.classList.add('flexmasonry-item');
     });
 
-    // Check if we have fewer items than columns
-    if(target.children.length < getCurrentCols()) {
-        // Work out how many more items we would need to fill the grid
-        const itemDeficit = getCurrentCols() - target.children.length;
-        // Create an empty item ...
-        const el = document.createElement('div');
-        // ... add the right class.
-        el.classList.add('flexmasonry-item');
-        // For each new item in the grid we need
-        for (var i = 0, len = itemDeficit; i < len; i++) {
-            // Append it to the grid
-            target.appendChild(el.cloneNode(true));
-        }
-     }
-
     addBreakElements(target);
 }
 
