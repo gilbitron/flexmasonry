@@ -1,7 +1,7 @@
 .flexmasonry {
     display: flex;
     flex-flow: column wrap;
-    align-content: space-between;
+    align-content: flex-start;
 }
 
 .flexmasonry-item { width: 100%; }
