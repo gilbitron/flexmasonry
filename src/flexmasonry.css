@@ -4,14 +4,7 @@
     align-content: space-between;
 }
 
-.flexmasonry-item { width: 100%; }
-.flexmasonry-cols-2 .flexmasonry-item { width: 50%; }
-.flexmasonry-cols-3 .flexmasonry-item { width: 33.333%; }
-.flexmasonry-cols-4 .flexmasonry-item { width: 25%; }
-.flexmasonry-cols-5 .flexmasonry-item { width: 20%; }
-.flexmasonry-cols-6 .flexmasonry-item { width: 16.666%; }
-.flexmasonry-cols-7 .flexmasonry-item { width: 14.285%; }
-.flexmasonry-cols-8 .flexmasonry-item { width: 12.5%; }
+.flexmasonry-item { width: 100%; box-sizing: border-box; }
 
 .flexmasonry-cols-2 .flexmasonry-item:nth-child(2n+1) { order: 1; }
 .flexmasonry-cols-2 .flexmasonry-item:nth-child(2n)   { order: 2; }
