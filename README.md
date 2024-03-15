@@ -83,7 +83,7 @@ The second, optional, parameter of the `init` method is an object containing opt
      */
     numCols: 4,
     /*
-     * If you want to give gap between of the columns/row
+     * If `gap` is specified, this amount in px will be between the columns/row
      */
     gap: 0,
 }
@@ -93,9 +93,9 @@ For example, to always shown 6 columns in your grid:
 
 ```js
 FlexMasonry.init(".grid", {
-  responsive: false,
-  numCols: 6,
-  gap: 2,
+    responsive: false,
+    numCols: 6,
+    gap: 2,
 });
 ```
 
@@ -105,7 +105,7 @@ The `FlexMasonry` variable has several methods:
 
 **`init(targets, options = {})`**
 
-Initialises the FlexMasonry library and sets up the `targets` as masonry grids.
+Initializes the FlexMasonry library and sets up the `targets` as masonry grids.
 
 * `targets` can be a string, an array of elements or a `Node​List`.
 * `options` [see above](#options).
