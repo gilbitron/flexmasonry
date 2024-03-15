@@ -35,7 +35,7 @@ function init(targets, options = {}) {
 
     _options = Object.assign(defaultOptions, options);
 
-    _targets.forEach(function(target) {
+    _targets.forEach(function (target) {
         setUp(target);
         setHeight(target);
     });
@@ -54,7 +54,7 @@ function setUp(target) {
 
     setColsClass(target);
 
-    Array.from(target.children).forEach(function(item) {
+    Array.from(target.children).forEach(function (item) {
         item.classList.add('flexmasonry-item');
     });
 
@@ -62,7 +62,7 @@ function setUp(target) {
 }
 
 function onLoad() {
-    _targets.forEach(function(target) {
+    _targets.forEach(function (target) {
         setHeight(target);
     });
 }
@@ -72,7 +72,7 @@ function onResize() {
         window.cancelAnimationFrame(_resizeId);
     }
 
-    _resizeId = window.requestAnimationFrame(function() {
+    _resizeId = window.requestAnimationFrame(function () {
         refreshAll();
     });
 }
@@ -95,13 +95,13 @@ function setHeight(target) {
 
     let heights = [];
 
-    Array.from(target.children).forEach(function(item) {
+    Array.from(target.children).forEach(function (item) {
         if (item.classList.contains('flexmasonry-break')) {
             return;
         }
 
-        const comp   = window.getComputedStyle(item);
-        const order  = comp.getPropertyValue('order');
+        const comp = window.getComputedStyle(item);
+        const order = comp.getPropertyValue('order');
         const height = comp.getPropertyValue('height');
 
         if (!heights[order - 1]) {
@@ -116,7 +116,7 @@ function setHeight(target) {
 
 function addBreakElements(target) {
     const breakEls = target.querySelectorAll('.flexmasonry-break');
-    if (Array.from(breakEls).length === (getCurrentCols() - 1)) {
+    if (Array.from(breakEls).length === getCurrentCols() - 1) {
         return;
     }
 
@@ -130,11 +130,11 @@ function addBreakElements(target) {
 
 function removeBreakElements(target) {
     const breakEls = target.querySelectorAll('.flexmasonry-break');
-    if (Array.from(breakEls).length === (getCurrentCols() - 1)) {
+    if (Array.from(breakEls).length === getCurrentCols() - 1) {
         return;
     }
 
-    Array.from(breakEls).forEach(function(breakEl) {
+    Array.from(breakEls).forEach(function (breakEl) {
         breakEl.parentNode.removeChild(breakEl);
     });
 }
@@ -175,7 +175,7 @@ function refresh(target, options = {}) {
 }
 
 function refreshAll(options = {}) {
-    _targets.forEach(function(target) {
+    _targets.forEach(function (target) {
         refresh(target, options);
     });
 
@@ -191,4 +191,4 @@ export default {
     refresh,
     refreshAll,
     destroyAll,
-}
+};
