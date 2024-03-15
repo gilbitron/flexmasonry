@@ -8,18 +8,18 @@ FlexMasonry is a lightweight, zero-dependency, masonry (cascading grid layout) l
 
 ## Features
 
-- **Lightweight** - Just 6KB of JS and CSS
-- **Fast** - Uses CSS flexbox for layout
-- **Responsive** - Show different number of columns at different breakpoints
-- **Simple** - Just 3 options
+* **Lightweight** - Just 6KB of JS and CSS
+* **Fast** - Uses CSS flexbox for layout
+* **Responsive** - Show different number of columns at different breakpoints
+* **Simple** - Just 3 options
 
 [See a demo](https://flexmasonry.now.sh/)
 
 ## Install
 
-- Download the [latest release](https://github.com/gilbitron/flexmasonry/releases).
-- Clone this repo.
-- Install using NPM/Yarn:
+* Download the [latest release](https://github.com/gilbitron/flexmasonry/releases).
+* Clone this repo.
+* Install using NPM/Yarn:
 
 ```
 npm install flexmasonry
@@ -29,10 +29,7 @@ yarn add flexmasonry
 Then, include the `flexmasonry.js` and `flexmasonry.css` files from the `dist` folder in your HTML. Or you can use the files directly from a CDN:
 
 ```html
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/flexmasonry/dist/flexmasonry.css"
-/>
+<link rel="stylesheet" href="https://unpkg.com/flexmasonry/dist/flexmasonry.css">
 <script src="https://unpkg.com/flexmasonry/dist/flexmasonry.js"></script>
 ```
 
@@ -42,18 +39,18 @@ Set up your HTML. For example:
 
 ```html
 <div class="grid">
-  <div><img src="https://source.unsplash.com/t3DHojIo-08" alt="" /></div>
-  <div><img src="https://source.unsplash.com/Imc-IoZDMXc" alt="" /></div>
-  <div><img src="https://source.unsplash.com/SOZWHqeXcPQ" alt="" /></div>
-  <div><img src="https://source.unsplash.com/bkdzvgBB7rQ" alt="" /></div>
-  <div><img src="https://source.unsplash.com/Aruugw_rJCM" alt="" /></div>
+    <div><img src="https://source.unsplash.com/t3DHojIo-08" alt=""></div>
+    <div><img src="https://source.unsplash.com/Imc-IoZDMXc" alt=""></div>
+    <div><img src="https://source.unsplash.com/SOZWHqeXcPQ" alt=""></div>
+    <div><img src="https://source.unsplash.com/bkdzvgBB7rQ" alt=""></div>
+    <div><img src="https://source.unsplash.com/Aruugw_rJCM" alt=""></div>
 </div>
 ```
 
 Then hook up the script, passing in the selector target:
 
 ```js
-FlexMasonry.init(".grid");
+FlexMasonry.init('.grid');
 ```
 
 FlexMasonry will then convert all `.grid` elements to masonry grids with multiple columns.
@@ -110,21 +107,21 @@ The `FlexMasonry` variable has several methods:
 
 Initialises the FlexMasonry library and sets up the `targets` as masonry grids.
 
-- `targets` can be a string, an array of elements or a `Node​List`.
-- `options` [see above](#options).
+* `targets` can be a string, an array of elements or a `Node​List`.
+* `options` [see above](#options).
 
 **`refresh(target, options = {})`**
 
 Refreshes the `target` grid layout.
 
-- `target` must be an `Element`.
-- `options` [see above](#options).
+* `target` must be an `Element`.
+* `options` [see above](#options).
 
 **`refreshAll(options = {})`**
 
 Refreshes the grid layouts of all `targets` passed to `init()`.
 
-- `options` [see above](#options).
+* `options` [see above](#options).
 
 **`destroyAll()`**
 
@@ -149,9 +146,9 @@ A good question! You _can_ use pure CSS to achieve the same outcome. However, th
 
 To show your support for my work on this project:
 
-- [Star this repository](https://github.com/gilbitron/flexmasonry/stargazers)
-- [Tell others about this project](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fgilbitron%2Fflexmasonry)
-- [Sponsor me on GitHub](https://github.com/users/gilbitron/sponsorship)
+* [Star this repository](https://github.com/gilbitron/flexmasonry/stargazers)
+* [Tell others about this project](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fgilbitron%2Fflexmasonry)
+* [Sponsor me on GitHub](https://github.com/users/gilbitron/sponsorship)
 
 ## Credits
 
