@@ -20,6 +20,10 @@ const defaultOptions = {
      * no matter the width of the screen.
      */
     numCols: 4,
+    /**
+     * If `gap` is specified, this amount in px will be between the columns/row
+     */
+    gap: 0,
 };
 
 let _resizeId = null;
@@ -89,13 +93,20 @@ function removeEventListeners() {
 
 function setHeight(target) {
     if (getCurrentCols() < 2) {
-        target.style.removeProperty('height');
+        target.style.removeProperty("height");
+        Array.from(target.children).forEach(function (item) {
+            item.style.removeProperty("width");
+        });
         return;
     }
 
     let heights = [];
 
     Array.from(target.children).forEach(function(item) {
+        if (!!_options.gap) {
+            item.style.padding = `${_options.gap}px`;
+            item.style.width = `${100 / getCurrentCols()}%`;
+        }
         if (item.classList.contains('flexmasonry-break')) {
             return;
         }
